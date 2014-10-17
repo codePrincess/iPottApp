@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		32B7BD7019F05A4E00D3FE7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B7BD6F19F05A4E00D3FE7F /* main.m */; };
+		32B7BD7319F05A4E00D3FE7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B7BD7219F05A4E00D3FE7F /* AppDelegate.m */; };
+		32B7BD7619F05A4E00D3FE7F /* NewsOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B7BD7519F05A4E00D3FE7F /* NewsOverviewViewController.m */; };
+		32B7BD7919F05A4E00D3FE7F /* FavOverviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B7BD7819F05A4E00D3FE7F /* FavOverviewViewController.m */; };
+		32B7BD7C19F05A4E00D3FE7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32B7BD7A19F05A4E00D3FE7F /* Main.storyboard */; };
+		32B7BD7E19F05A4E00D3FE7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32B7BD7D19F05A4E00D3FE7F /* Images.xcassets */; };
+		32B7BD8119F05A4E00D3FE7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32B7BD7F19F05A4E00D3FE7F /* LaunchScreen.xib */; };
+		32B7BD8D19F05A4E00D3FE7F /* iPottAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B7BD8C19F05A4E00D3FE7F /* iPottAppTests.m */; };
+		32B7BD9819F0658900D3FE7F /* NewsArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B7BD9719F0658900D3FE7F /* NewsArticleViewController.m */; };
+		32B7BD9B19F0717600D3FE7F /* NewsOverviewCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B7BD9A19F0717600D3FE7F /* NewsOverviewCellTableViewCell.m */; };
+		32B7BDA019F07B4600D3FE7F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BD9D19F07B4600D3FE7F /* Bolts.framework */; };
+		32B7BDA119F07B4700D3FE7F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BD9E19F07B4600D3FE7F /* Parse.framework */; };
+		32B7BDA219F07B4700D3FE7F /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BD9F19F07B4600D3FE7F /* ParseFacebookUtils.framework */; };
+		32B7BDA419F07B6500D3FE7F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BDA319F07B6500D3FE7F /* AudioToolbox.framework */; };
+		32B7BDA619F07B6C00D3FE7F /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BDA519F07B6C00D3FE7F /* CFNetwork.framework */; };
+		32B7BDA819F07B7900D3FE7F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BDA719F07B7900D3FE7F /* CoreGraphics.framework */; };
+		32B7BDAA19F07B7F00D3FE7F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BDA919F07B7F00D3FE7F /* CoreLocation.framework */; };
+		32B7BDAC19F07B8900D3FE7F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BDAB19F07B8900D3FE7F /* libz.dylib */; };
+		32B7BDAE19F07B9100D3FE7F /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BDAD19F07B9100D3FE7F /* MobileCoreServices.framework */; };
+		32B7BDB019F07B9B00D3FE7F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BDAF19F07B9B00D3FE7F /* QuartzCore.framework */; };
+		32B7BDB219F07BA100D3FE7F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BDB119F07BA100D3FE7F /* Security.framework */; };
+		32B7BDB419F07BA900D3FE7F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BDB319F07BA900D3FE7F /* StoreKit.framework */; };
+		32B7BDB619F07BB000D3FE7F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BDB519F07BAF00D3FE7F /* SystemConfiguration.framework */; };
+		32B7BDB919F0899E00D3FE7F /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B7BDB819F0899E00D3FE7F /* DataCenter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32B7BD8719F05A4E00D3FE7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32B7BD6219F05A4E00D3FE7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32B7BD6919F05A4E00D3FE7F;
+			remoteInfo = iPottApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		32B7BD6A19F05A4E00D3FE7F /* iPottApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPottApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B7BD6E19F05A4E00D3FE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32B7BD6F19F05A4E00D3FE7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32B7BD7119F05A4E00D3FE7F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		32B7BD7219F05A4E00D3FE7F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		32B7BD7419F05A4E00D3FE7F /* NewsOverviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsOverviewViewController.h; sourceTree = "<group>"; };
+		32B7BD7519F05A4E00D3FE7F /* NewsOverviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsOverviewViewController.m; sourceTree = "<group>"; };
+		32B7BD7719F05A4E00D3FE7F /* FavOverviewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FavOverviewViewController.h; sourceTree = "<group>"; };
+		32B7BD7819F05A4E00D3FE7F /* FavOverviewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FavOverviewViewController.m; sourceTree = "<group>"; };
+		32B7BD7B19F05A4E00D3FE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32B7BD7D19F05A4E00D3FE7F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		32B7BD8019F05A4E00D3FE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		32B7BD8619F05A4E00D3FE7F /* iPottAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPottAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32B7BD8B19F05A4E00D3FE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32B7BD8C19F05A4E00D3FE7F /* iPottAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPottAppTests.m; sourceTree = "<group>"; };
+		32B7BD9619F0658800D3FE7F /* NewsArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsArticleViewController.h; sourceTree = "<group>"; };
+		32B7BD9719F0658900D3FE7F /* NewsArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsArticleViewController.m; sourceTree = "<group>"; };
+		32B7BD9919F0717600D3FE7F /* NewsOverviewCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsOverviewCellTableViewCell.h; sourceTree = "<group>"; };
+		32B7BD9A19F0717600D3FE7F /* NewsOverviewCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsOverviewCellTableViewCell.m; sourceTree = "<group>"; };
+		32B7BD9D19F07B4600D3FE7F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		32B7BD9E19F07B4600D3FE7F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		32B7BD9F19F07B4600D3FE7F /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		32B7BDA319F07B6500D3FE7F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		32B7BDA519F07B6C00D3FE7F /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		32B7BDA719F07B7900D3FE7F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		32B7BDA919F07B7F00D3FE7F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		32B7BDAB19F07B8900D3FE7F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		32B7BDAD19F07B9100D3FE7F /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		32B7BDAF19F07B9B00D3FE7F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		32B7BDB119F07BA100D3FE7F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		32B7BDB319F07BA900D3FE7F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		32B7BDB519F07BAF00D3FE7F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		32B7BDB719F0899E00D3FE7F /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
+		32B7BDB819F0899E00D3FE7F /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32B7BD6719F05A4E00D3FE7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B7BDB619F07BB000D3FE7F /* SystemConfiguration.framework in Frameworks */,
+				32B7BDB419F07BA900D3FE7F /* StoreKit.framework in Frameworks */,
+				32B7BDB219F07BA100D3FE7F /* Security.framework in Frameworks */,
+				32B7BDB019F07B9B00D3FE7F /* QuartzCore.framework in Frameworks */,
+				32B7BDAE19F07B9100D3FE7F /* MobileCoreServices.framework in Frameworks */,
+				32B7BDAC19F07B8900D3FE7F /* libz.dylib in Frameworks */,
+				32B7BDAA19F07B7F00D3FE7F /* CoreLocation.framework in Frameworks */,
+				32B7BDA819F07B7900D3FE7F /* CoreGraphics.framework in Frameworks */,
+				32B7BDA619F07B6C00D3FE7F /* CFNetwork.framework in Frameworks */,
+				32B7BDA419F07B6500D3FE7F /* AudioToolbox.framework in Frameworks */,
+				32B7BDA119F07B4700D3FE7F /* Parse.framework in Frameworks */,
+				32B7BDA019F07B4600D3FE7F /* Bolts.framework in Frameworks */,
+				32B7BDA219F07B4700D3FE7F /* ParseFacebookUtils.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B7BD8319F05A4E00D3FE7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		32B7BD6119F05A4E00D3FE7F = {
+			isa = PBXGroup;
+			children = (
+				32B7BD6C19F05A4E00D3FE7F /* iPottApp */,
+				32B7BD8919F05A4E00D3FE7F /* iPottAppTests */,
+				32B7BD6B19F05A4E00D3FE7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		32B7BD6B19F05A4E00D3FE7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32B7BD6A19F05A4E00D3FE7F /* iPottApp.app */,
+				32B7BD8619F05A4E00D3FE7F /* iPottAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32B7BD6C19F05A4E00D3FE7F /* iPottApp */ = {
+			isa = PBXGroup;
+			children = (
+				32B7BD7119F05A4E00D3FE7F /* AppDelegate.h */,
+				32B7BD7219F05A4E00D3FE7F /* AppDelegate.m */,
+				32B7BDB719F0899E00D3FE7F /* DataCenter.h */,
+				32B7BDB819F0899E00D3FE7F /* DataCenter.m */,
+				32B7BD7419F05A4E00D3FE7F /* NewsOverviewViewController.h */,
+				32B7BD7519F05A4E00D3FE7F /* NewsOverviewViewController.m */,
+				32B7BD9919F0717600D3FE7F /* NewsOverviewCellTableViewCell.h */,
+				32B7BD9A19F0717600D3FE7F /* NewsOverviewCellTableViewCell.m */,
+				32B7BD9619F0658800D3FE7F /* NewsArticleViewController.h */,
+				32B7BD9719F0658900D3FE7F /* NewsArticleViewController.m */,
+				32B7BD7719F05A4E00D3FE7F /* FavOverviewViewController.h */,
+				32B7BD7819F05A4E00D3FE7F /* FavOverviewViewController.m */,
+				32B7BD7A19F05A4E00D3FE7F /* Main.storyboard */,
+				32B7BD7D19F05A4E00D3FE7F /* Images.xcassets */,
+				32B7BD7F19F05A4E00D3FE7F /* LaunchScreen.xib */,
+				32B7BD9C19F07AB600D3FE7F /* Frameworks */,
+				32B7BD6D19F05A4E00D3FE7F /* Supporting Files */,
+			);
+			path = iPottApp;
+			sourceTree = "<group>";
+		};
+		32B7BD6D19F05A4E00D3FE7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32B7BD6E19F05A4E00D3FE7F /* Info.plist */,
+				32B7BD6F19F05A4E00D3FE7F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32B7BD8919F05A4E00D3FE7F /* iPottAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				32B7BD8C19F05A4E00D3FE7F /* iPottAppTests.m */,
+				32B7BD8A19F05A4E00D3FE7F /* Supporting Files */,
+			);
+			path = iPottAppTests;
+			sourceTree = "<group>";
+		};
+		32B7BD8A19F05A4E00D3FE7F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				32B7BD8B19F05A4E00D3FE7F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		32B7BD9C19F07AB600D3FE7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32B7BDB519F07BAF00D3FE7F /* SystemConfiguration.framework */,
+				32B7BDB319F07BA900D3FE7F /* StoreKit.framework */,
+				32B7BDB119F07BA100D3FE7F /* Security.framework */,
+				32B7BDAF19F07B9B00D3FE7F /* QuartzCore.framework */,
+				32B7BDAD19F07B9100D3FE7F /* MobileCoreServices.framework */,
+				32B7BDAB19F07B8900D3FE7F /* libz.dylib */,
+				32B7BDA919F07B7F00D3FE7F /* CoreLocation.framework */,
+				32B7BDA719F07B7900D3FE7F /* CoreGraphics.framework */,
+				32B7BDA519F07B6C00D3FE7F /* CFNetwork.framework */,
+				32B7BDA319F07B6500D3FE7F /* AudioToolbox.framework */,
+				32B7BD9D19F07B4600D3FE7F /* Bolts.framework */,
+				32B7BD9E19F07B4600D3FE7F /* Parse.framework */,
+				32B7BD9F19F07B4600D3FE7F /* ParseFacebookUtils.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32B7BD6919F05A4E00D3FE7F /* iPottApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32B7BD9019F05A4E00D3FE7F /* Build configuration list for PBXNativeTarget "iPottApp" */;
+			buildPhases = (
+				32B7BD6619F05A4E00D3FE7F /* Sources */,
+				32B7BD6719F05A4E00D3FE7F /* Frameworks */,
+				32B7BD6819F05A4E00D3FE7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iPottApp;
+			productName = iPottApp;
+			productReference = 32B7BD6A19F05A4E00D3FE7F /* iPottApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32B7BD8519F05A4E00D3FE7F /* iPottAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32B7BD9319F05A4E00D3FE7F /* Build configuration list for PBXNativeTarget "iPottAppTests" */;
+			buildPhases = (
+				32B7BD8219F05A4E00D3FE7F /* Sources */,
+				32B7BD8319F05A4E00D3FE7F /* Frameworks */,
+				32B7BD8419F05A4E00D3FE7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32B7BD8819F05A4E00D3FE7F /* PBXTargetDependency */,
+			);
+			name = iPottAppTests;
+			productName = iPottAppTests;
+			productReference = 32B7BD8619F05A4E00D3FE7F /* iPottAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32B7BD6219F05A4E00D3FE7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = bitroyal;
+				TargetAttributes = {
+					32B7BD6919F05A4E00D3FE7F = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					32B7BD8519F05A4E00D3FE7F = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 32B7BD6919F05A4E00D3FE7F;
+					};
+				};
+			};
+			buildConfigurationList = 32B7BD6519F05A4E00D3FE7F /* Build configuration list for PBXProject "iPottApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32B7BD6119F05A4E00D3FE7F;
+			productRefGroup = 32B7BD6B19F05A4E00D3FE7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32B7BD6919F05A4E00D3FE7F /* iPottApp */,
+				32B7BD8519F05A4E00D3FE7F /* iPottAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32B7BD6819F05A4E00D3FE7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B7BD7C19F05A4E00D3FE7F /* Main.storyboard in Resources */,
+				32B7BD8119F05A4E00D3FE7F /* LaunchScreen.xib in Resources */,
+				32B7BD7E19F05A4E00D3FE7F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B7BD8419F05A4E00D3FE7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32B7BD6619F05A4E00D3FE7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B7BD7919F05A4E00D3FE7F /* FavOverviewViewController.m in Sources */,
+				32B7BD9B19F0717600D3FE7F /* NewsOverviewCellTableViewCell.m in Sources */,
+				32B7BD7319F05A4E00D3FE7F /* AppDelegate.m in Sources */,
+				32B7BD7619F05A4E00D3FE7F /* NewsOverviewViewController.m in Sources */,
+				32B7BDB919F0899E00D3FE7F /* DataCenter.m in Sources */,
+				32B7BD7019F05A4E00D3FE7F /* main.m in Sources */,
+				32B7BD9819F0658900D3FE7F /* NewsArticleViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32B7BD8219F05A4E00D3FE7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32B7BD8D19F05A4E00D3FE7F /* iPottAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32B7BD8819F05A4E00D3FE7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32B7BD6919F05A4E00D3FE7F /* iPottApp */;
+			targetProxy = 32B7BD8719F05A4E00D3FE7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32B7BD7A19F05A4E00D3FE7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32B7BD7B19F05A4E00D3FE7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32B7BD7F19F05A4E00D3FE7F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32B7BD8019F05A4E00D3FE7F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32B7BD8E19F05A4E00D3FE7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		32B7BD8F19F05A4E00D3FE7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32B7BD9119F05A4E00D3FE7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iPottApp",
+				);
+				INFOPLIST_FILE = iPottApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		32B7BD9219F05A4E00D3FE7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iPottApp",
+				);
+				INFOPLIST_FILE = iPottApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		32B7BD9419F05A4E00D3FE7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iPottAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPottApp.app/iPottApp";
+			};
+			name = Debug;
+		};
+		32B7BD9519F05A4E00D3FE7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = iPottAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iPottApp.app/iPottApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32B7BD6519F05A4E00D3FE7F /* Build configuration list for PBXProject "iPottApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B7BD8E19F05A4E00D3FE7F /* Debug */,
+				32B7BD8F19F05A4E00D3FE7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32B7BD9019F05A4E00D3FE7F /* Build configuration list for PBXNativeTarget "iPottApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B7BD9119F05A4E00D3FE7F /* Debug */,
+				32B7BD9219F05A4E00D3FE7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		32B7BD9319F05A4E00D3FE7F /* Build configuration list for PBXNativeTarget "iPottAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32B7BD9419F05A4E00D3FE7F /* Debug */,
+				32B7BD9519F05A4E00D3FE7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 32B7BD6219F05A4E00D3FE7F /* Project object */;
+}
