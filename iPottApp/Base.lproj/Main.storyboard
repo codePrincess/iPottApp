@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--News-->
@@ -21,7 +21,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="newsOverviewCell" rowHeight="109" id="ZcX-zQ-ZwL" customClass="NewsOverviewCellTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="newsOverviewCell" rowHeight="109" id="ZcX-zQ-ZwL" customClass="NewsOverviewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZcX-zQ-ZwL" id="AU1-wc-t0N">
@@ -134,77 +134,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="109" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JkU-tO-9Eu">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="90" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="JkU-tO-9Eu">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="552"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="newsOverviewCell" rowHeight="109" id="zjE-qA-Re5" customClass="NewsOverviewCellTableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="favOverviewCell" rowHeight="90" id="zjE-qA-Re5" customClass="FavOverviewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zjE-qA-Re5" id="l2o-PL-hid">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="news-icon" translatesAutoresizingMaskIntoConstraints="NO" id="ZJw-wG-Vc0">
-                                                    <rect key="frame" x="15" y="10" width="44" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="44" id="PMS-mm-Mp9"/>
-                                                        <constraint firstAttribute="width" constant="44" id="urg-r9-BwJ"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE OF ARTICLE this is a very long one wow! More than one line!" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="360" translatesAutoresizingMaskIntoConstraints="NO" id="pWk-Hi-mkh">
-                                                    <rect key="frame" x="74" y="15" width="486" height="48"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE OF ARTICLE this is a very long one wow! More than one line!" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="360" translatesAutoresizingMaskIntoConstraints="NO" id="pWk-Hi-mkh">
+                                                    <rect key="frame" x="20" y="10" width="527" height="24"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="20"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and this sublabel is very long either. wow... might be two lines either. reaaaaaaally long subtext!" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="360" translatesAutoresizingMaskIntoConstraints="NO" id="1vK-tr-pgT">
-                                                    <rect key="frame" x="74" y="60" width="486" height="36"/>
+                                                    <rect key="frame" x="20" y="44" width="527" height="36"/>
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                                     <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xka-k9-lyl">
-                                                    <rect key="frame" x="15" y="54" width="44" height="44"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="44" id="brh-ki-Eaf"/>
-                                                        <constraint firstAttribute="height" constant="44" id="iTM-mU-x99"/>
-                                                    </constraints>
-                                                    <state key="normal" image="unfav">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
-                                                    <connections>
-                                                        <action selector="favButtonTapped:" destination="zjE-qA-Re5" eventType="touchUpInside" id="cPP-8Y-WIt"/>
-                                                    </connections>
-                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="pWk-Hi-mkh" secondAttribute="trailing" constant="7" id="2e9-FP-NZa"/>
-                                                <constraint firstItem="pWk-Hi-mkh" firstAttribute="top" secondItem="l2o-PL-hid" secondAttribute="top" constant="15" id="CyN-zT-1Pk"/>
-                                                <constraint firstItem="xka-k9-lyl" firstAttribute="top" secondItem="ZJw-wG-Vc0" secondAttribute="bottom" id="Oy5-9O-3nn"/>
-                                                <constraint firstItem="pWk-Hi-mkh" firstAttribute="leading" secondItem="ZJw-wG-Vc0" secondAttribute="trailing" constant="15" id="cQq-6p-2Xg"/>
-                                                <constraint firstItem="ZJw-wG-Vc0" firstAttribute="leading" secondItem="l2o-PL-hid" secondAttribute="leading" constant="15" id="kzm-Tk-EDE"/>
-                                                <constraint firstItem="ZJw-wG-Vc0" firstAttribute="top" secondItem="l2o-PL-hid" secondAttribute="top" constant="10" id="njJ-dQ-2Jl"/>
-                                                <constraint firstItem="pWk-Hi-mkh" firstAttribute="leading" secondItem="ZJw-wG-Vc0" secondAttribute="trailing" constant="20" id="pyk-N3-BWU"/>
-                                                <constraint firstItem="1vK-tr-pgT" firstAttribute="top" secondItem="pWk-Hi-mkh" secondAttribute="bottom" constant="-2" id="qpO-e3-Qag"/>
-                                                <constraint firstItem="xka-k9-lyl" firstAttribute="leading" secondItem="l2o-PL-hid" secondAttribute="leading" constant="15" id="tW7-Wi-NCv"/>
-                                                <constraint firstItem="xka-k9-lyl" firstAttribute="leading" secondItem="l2o-PL-hid" secondAttribute="leading" constant="15" id="uxB-YU-coY"/>
+                                                <constraint firstAttribute="trailing" secondItem="pWk-Hi-mkh" secondAttribute="trailing" constant="20" id="2e9-FP-NZa"/>
+                                                <constraint firstItem="pWk-Hi-mkh" firstAttribute="top" secondItem="l2o-PL-hid" secondAttribute="top" constant="10" id="CyN-zT-1Pk"/>
+                                                <constraint firstItem="pWk-Hi-mkh" firstAttribute="leading" secondItem="l2o-PL-hid" secondAttribute="leading" constant="20" id="Mn3-VT-ef8"/>
+                                                <constraint firstItem="1vK-tr-pgT" firstAttribute="top" secondItem="pWk-Hi-mkh" secondAttribute="bottom" constant="10" id="qpO-e3-Qag"/>
                                                 <constraint firstItem="pWk-Hi-mkh" firstAttribute="leading" secondItem="1vK-tr-pgT" secondAttribute="leading" id="zsh-tX-Zwo"/>
                                                 <constraint firstItem="pWk-Hi-mkh" firstAttribute="width" secondItem="1vK-tr-pgT" secondAttribute="width" id="ztk-il-Iuc"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="pyk-N3-BWU"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <outlet property="cellImage" destination="ZJw-wG-Vc0" id="wKG-eS-UE0"/>
                                             <outlet property="cellSubtitleLabel" destination="1vK-tr-pgT" id="p2q-8i-V5m"/>
                                             <outlet property="cellTitleLabel" destination="pWk-Hi-mkh" id="HKq-ZT-6Wa"/>
-                                            <outlet property="favButton" destination="xka-k9-lyl" id="Z6Q-wl-jss"/>
                                             <segue destination="xGF-aw-v7j" kind="show" identifier="ShowNewsArticleSegue" id="hWB-ca-RpM"/>
                                         </connections>
                                     </tableViewCell>
@@ -236,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="917" y="419"/>
+            <point key="canvasLocation" x="917" y="417"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">

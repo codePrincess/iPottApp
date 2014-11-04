@@ -26,6 +26,8 @@
     
     [[DataCenter defaultCenter] setup];
     
+    [self.window setTintColor:[UIColor orangeColor]];
+    
     return YES;
 }
 

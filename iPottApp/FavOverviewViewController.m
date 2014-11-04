@@ -8,7 +8,7 @@
 
 #import "FavOverviewViewController.h"
 #import "NewsArticleViewController.h"
-#import "NewsOverviewCellTableViewCell.h"
+#import "NewsOverviewCell.h"
 #import <Parse/Parse.h>
 #import "DataCenter.h"
 
@@ -67,24 +67,6 @@
     return indexPath;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSMutableArray *readArticleIDs = [[NSUserDefaults standardUserDefaults] arrayForKey:kReadArticles].mutableCopy;
-    if (!readArticleIDs) {
-        readArticleIDs = [NSMutableArray array];
-    }
-    
-    PFObject *article = self.articles[indexPath.row];
-    
-    if (![readArticleIDs containsObject:article.objectId]) {
-        [readArticleIDs addObject:article.objectId];
-        [[NSUserDefaults standardUserDefaults] setObject:readArticleIDs forKey:kReadArticles];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-        
-        NewsOverviewCellTableViewCell *cell = (NewsOverviewCellTableViewCell*) [tableView cellForRowAtIndexPath:indexPath];
-        cell.cellImage.image = [UIImage imageNamed:@"news-icon"];
-    }
-}
 
 #pragma mark - <UITableViewDelegate>
 
@@ -97,24 +79,14 @@
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *myCellIdentifier = @"newsOverviewCell";
-    NewsOverviewCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:myCellIdentifier];
+    static NSString *myCellIdentifier = @"favOverviewCell";
+    NewsOverviewCell *cell = [tableView dequeueReusableCellWithIdentifier:myCellIdentifier];
     
-    NSArray *readArticleIDs = [[NSUserDefaults standardUserDefaults] arrayForKey:kReadArticles];
     PFObject *article = self.articles[indexPath.row];
-    
-    if ([readArticleIDs containsObject:article.objectId]) {
-        cell.cellImage.image = [UIImage imageNamed:@"news-icon"];
-    }
-    else {
-        cell.cellImage.image = [UIImage imageNamed:@"news_unread-icon"];
-    }
     
     cell.cellTitleLabel.text = article[@"title"];
     cell.cellSubtitleLabel.text = article[@"subtitle"];
     cell.article = article;
-    
-    [cell setupCell];
     
     return cell;
 }

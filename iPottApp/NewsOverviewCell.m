@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 bitroyal. All rights reserved.
 //
 
-#import "NewsOverviewCellTableViewCell.h"
+#import "NewsOverviewCell.h"
 #import "DataCenter.h"
 
 
-@interface NewsOverviewCellTableViewCell ()
+@interface NewsOverviewCell ()
 
 @property (weak, nonatomic) IBOutlet UIButton *favButton;
 
 @end
 
-@implementation NewsOverviewCellTableViewCell
+@implementation NewsOverviewCell
 
 - (void) setupCell
 {

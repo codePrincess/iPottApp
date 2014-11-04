@@ -16,7 +16,7 @@
 		32B7BD8119F05A4E00D3FE7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32B7BD7F19F05A4E00D3FE7F /* LaunchScreen.xib */; };
 		32B7BD8D19F05A4E00D3FE7F /* iPottAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B7BD8C19F05A4E00D3FE7F /* iPottAppTests.m */; };
 		32B7BD9819F0658900D3FE7F /* NewsArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B7BD9719F0658900D3FE7F /* NewsArticleViewController.m */; };
-		32B7BD9B19F0717600D3FE7F /* NewsOverviewCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B7BD9A19F0717600D3FE7F /* NewsOverviewCellTableViewCell.m */; };
+		32B7BD9B19F0717600D3FE7F /* NewsOverviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B7BD9A19F0717600D3FE7F /* NewsOverviewCell.m */; };
 		32B7BDA019F07B4600D3FE7F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BD9D19F07B4600D3FE7F /* Bolts.framework */; };
 		32B7BDA119F07B4700D3FE7F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BD9E19F07B4600D3FE7F /* Parse.framework */; };
 		32B7BDA219F07B4700D3FE7F /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BD9F19F07B4600D3FE7F /* ParseFacebookUtils.framework */; };
@@ -31,6 +31,7 @@
 		32B7BDB419F07BA900D3FE7F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BDB319F07BA900D3FE7F /* StoreKit.framework */; };
 		32B7BDB619F07BB000D3FE7F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32B7BDB519F07BAF00D3FE7F /* SystemConfiguration.framework */; };
 		32B7BDB919F0899E00D3FE7F /* DataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B7BDB819F0899E00D3FE7F /* DataCenter.m */; };
+		32CC98E81A0934230003D18D /* FavOverviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32CC98E71A0934230003D18D /* FavOverviewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +62,8 @@
 		32B7BD8C19F05A4E00D3FE7F /* iPottAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPottAppTests.m; sourceTree = "<group>"; };
 		32B7BD9619F0658800D3FE7F /* NewsArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsArticleViewController.h; sourceTree = "<group>"; };
 		32B7BD9719F0658900D3FE7F /* NewsArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsArticleViewController.m; sourceTree = "<group>"; };
-		32B7BD9919F0717600D3FE7F /* NewsOverviewCellTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsOverviewCellTableViewCell.h; sourceTree = "<group>"; };
-		32B7BD9A19F0717600D3FE7F /* NewsOverviewCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsOverviewCellTableViewCell.m; sourceTree = "<group>"; };
+		32B7BD9919F0717600D3FE7F /* NewsOverviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsOverviewCell.h; sourceTree = "<group>"; };
+		32B7BD9A19F0717600D3FE7F /* NewsOverviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsOverviewCell.m; sourceTree = "<group>"; };
 		32B7BD9D19F07B4600D3FE7F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		32B7BD9E19F07B4600D3FE7F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		32B7BD9F19F07B4600D3FE7F /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
@@ -78,6 +79,8 @@
 		32B7BDB519F07BAF00D3FE7F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		32B7BDB719F0899E00D3FE7F /* DataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataCenter.h; sourceTree = "<group>"; };
 		32B7BDB819F0899E00D3FE7F /* DataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataCenter.m; sourceTree = "<group>"; };
+		32CC98E61A0934230003D18D /* FavOverviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavOverviewCell.h; sourceTree = "<group>"; };
+		32CC98E71A0934230003D18D /* FavOverviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavOverviewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,12 +141,14 @@
 				32B7BDB819F0899E00D3FE7F /* DataCenter.m */,
 				32B7BD7419F05A4E00D3FE7F /* NewsOverviewViewController.h */,
 				32B7BD7519F05A4E00D3FE7F /* NewsOverviewViewController.m */,
-				32B7BD9919F0717600D3FE7F /* NewsOverviewCellTableViewCell.h */,
-				32B7BD9A19F0717600D3FE7F /* NewsOverviewCellTableViewCell.m */,
+				32B7BD9919F0717600D3FE7F /* NewsOverviewCell.h */,
+				32B7BD9A19F0717600D3FE7F /* NewsOverviewCell.m */,
 				32B7BD9619F0658800D3FE7F /* NewsArticleViewController.h */,
 				32B7BD9719F0658900D3FE7F /* NewsArticleViewController.m */,
 				32B7BD7719F05A4E00D3FE7F /* FavOverviewViewController.h */,
 				32B7BD7819F05A4E00D3FE7F /* FavOverviewViewController.m */,
+				32CC98E61A0934230003D18D /* FavOverviewCell.h */,
+				32CC98E71A0934230003D18D /* FavOverviewCell.m */,
 				32B7BD7A19F05A4E00D3FE7F /* Main.storyboard */,
 				32B7BD7D19F05A4E00D3FE7F /* Images.xcassets */,
 				32B7BD7F19F05A4E00D3FE7F /* LaunchScreen.xib */,
@@ -299,8 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32CC98E81A0934230003D18D /* FavOverviewCell.m in Sources */,
 				32B7BD7919F05A4E00D3FE7F /* FavOverviewViewController.m in Sources */,
-				32B7BD9B19F0717600D3FE7F /* NewsOverviewCellTableViewCell.m in Sources */,
+				32B7BD9B19F0717600D3FE7F /* NewsOverviewCell.m in Sources */,
 				32B7BD7319F05A4E00D3FE7F /* AppDelegate.m in Sources */,
 				32B7BD7619F05A4E00D3FE7F /* NewsOverviewViewController.m in Sources */,
 				32B7BDB919F0899E00D3FE7F /* DataCenter.m in Sources */,
@@ -504,6 +510,7 @@
 				32B7BD9219F05A4E00D3FE7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		32B7BD9319F05A4E00D3FE7F /* Build configuration list for PBXNativeTarget "iPottAppTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +519,7 @@
 				32B7BD9519F05A4E00D3FE7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

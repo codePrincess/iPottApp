@@ -8,7 +8,7 @@
 
 #import "NewsOverviewViewController.h"
 #import "NewsArticleViewController.h"
-#import "NewsOverviewCellTableViewCell.h"
+#import "NewsOverviewCell.h"
 #import <Parse/Parse.h>
 #import "DataCenter.h"
 
@@ -82,7 +82,7 @@
         [[NSUserDefaults standardUserDefaults] setObject:readArticleIDs forKey:kReadArticles];
         [[NSUserDefaults standardUserDefaults] synchronize];
         
-        NewsOverviewCellTableViewCell *cell = (NewsOverviewCellTableViewCell*) [tableView cellForRowAtIndexPath:indexPath];
+        NewsOverviewCell *cell = (NewsOverviewCell*) [tableView cellForRowAtIndexPath:indexPath];
         cell.cellImage.image = [UIImage imageNamed:@"news-icon"];
     }
 }
@@ -99,7 +99,7 @@
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *myCellIdentifier = @"newsOverviewCell";
-    NewsOverviewCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:myCellIdentifier];
+    NewsOverviewCell *cell = [tableView dequeueReusableCellWithIdentifier:myCellIdentifier];
     
     NSArray *readArticleIDs = [[NSUserDefaults standardUserDefaults] arrayForKey:kReadArticles];
     PFObject *article = self.articles[indexPath.row];
